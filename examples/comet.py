@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 # @author: zig(shawhen2012@hotmail.com)
 
+import json
+
 import zagt
 from zagt import web
 import gevent
@@ -14,7 +16,7 @@ class IndexHandler(web.RequestHandler):
 
         for i in range(0, 10):
             gevent.sleep(1)
-            yield ("the {0}th turn\r\n".format(i)).encode(encoding="latin-1")
+            yield (json.dumps({"progress": "{0}%".format((i+1)*10)})+"\r\n").encode(encoding="latin-1")
 
 
 if __name__ == "__main__":

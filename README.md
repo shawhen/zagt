@@ -13,25 +13,25 @@ See the examples directory.
 - server: `python3 comet.py`
 - client: `curl localhost:8000`
 - 
-> the 0th turn
+> {"progress": "10%"}
 >
-> the 1th turn
+> {"progress": "20%"}
 >
-> the 2th turn
+> {"progress": "30%"}
 >
-> the 3th turn
+> {"progress": "40%"}
 >
-> the 4th turn
+> {"progress": "50%"}
 >
-> the 5th turn
+> {"progress": "60%"}
 >
-> the 6th turn
+> {"progress": "70%"}
 >
-> the 7th turn
+> {"progress": "80%"}
 >
-> the 8th turn
+> {"progress": "90%"}
 >
-> the 9th turn
+> {"progress": "100%"}
 
 # License
 MIT
